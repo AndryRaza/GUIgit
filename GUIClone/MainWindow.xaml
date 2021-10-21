@@ -7,13 +7,17 @@
         mc:Ignorable="d"
         Title="Cloner un projet" Height="237.551" Width="575.918"
         ResizeMode="NoResize">
-    <Grid Margin="0,0,9,6">
+    <Grid Margin="0,0,-6,-1">
+        <Grid.Background>
+            <ImageBrush ImageSource="twitch-amouranth-630x354.jpg"/>
+        </Grid.Background>
         <Label Content="Commandes Git à portée de main" Margin="181,26,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <TextBox x:Name="urlSource" HorizontalAlignment="Left" Height="23" Margin="71,78,0,0" TextWrapping="Wrap" Text="Chemin du répertoire" VerticalAlignment="Top" Width="357" TextChanged="urlSource_TextChanged"/>
         <TextBox x:Name="urlGithub" HorizontalAlignment="Left" Height="23" Margin="71,114,0,0" TextWrapping="Wrap" Text="URL du lien github" VerticalAlignment="Top" Width="357" TextChanged="urlGithub_TextChanged"/>
         <Button Content="Cloner" HorizontalAlignment="Left" Margin="353,154,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Height="23" Margin="0,78,62,0" Padding="8,0" HorizontalAlignment="Right" Name="_showDialogButton" VerticalAlignment="Top" IsDefault="True" Click="_showDialogButton_Click">Choisir</Button>
         <TextBlock x:Name="success" HorizontalAlignment="Left" Margin="71,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="218"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="98,179,0,-76" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

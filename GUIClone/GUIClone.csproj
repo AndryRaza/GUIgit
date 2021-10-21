@@ -101,5 +101,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="244422215_3669138283311819_979613668587461202_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="twitch-amouranth-630x354.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
