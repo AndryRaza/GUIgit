@@ -40,9 +40,16 @@ namespace GUIClone
 
             ProcessStartInfo proc = new ProcessStartInfo();
             proc.FileName = "cmd.exe";
-            proc.Arguments = @"/k " + disk + "&& cd "+ urlSource_ + " && git clone "+ urlGithub_;
+            proc.Arguments = @"/k " + disk + " && cd " + urlSource_ + " && git clone " + urlGithub_;
+            proc.WindowStyle = ProcessWindowStyle.Hidden;
+            
+            Process p = Process.Start(proc);
+            
+            if(!p.HasExited)
+            {
+                success.Text = @"L'opération a été un succès !";
+            }
 
-            Process.Start(proc);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
